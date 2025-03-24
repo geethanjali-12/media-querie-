@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .signup-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Mobile View (450px - 600px) */
+        @media (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        /* Tablet View (600px - 900px) */
+        @media (min-width: 600px) and (max-width: 900px) {
+            body {
+                background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            }
+
+            .container {
+                max-width: 80%;
+                margin: auto;
+                padding: 40px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .signup-btn {
+                background-color: #ff5733;
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">MyLogo</div>
+        <p>Welcome to our responsive webpage!</p>
+        <button class="signup-btn">Sign Up</button>
+    </div>
+    <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+    </footer>
+</body>
+</html>
